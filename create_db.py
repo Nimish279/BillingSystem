@@ -1,9 +1,9 @@
 import mysql.connector as c
 
 def create_db():
-        con=c.connect(host="localhost",username="root",password="casio27",database="project")         
+        con=c.connect(host="localhost",username="root",password="",database="project")         
         cursor=con.cursor()
-        cursor.execute("create table if not exists Customer(id integer primary key ,name varchar(20),email varchar(20),mobno varchar(20),dob varcha(20),addr varchar(20))")
+        cursor.execute("create table if not exists Customer(id integer primary key ,name varchar(20),email varchar(20),mobno varchar(20),dob varchar(20),addr varchar(20))")
         con.commit()
         print("Customer Created")
         
